@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initiasl-scale=1.0">
+        <title></title>
+        <style>
+            /* 1. css 코드 초기화하기 */
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed,
+            figure, figcaption, footer, header, hgroup,
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure,
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            /* 2. 구역 태그의 스타일 */
+            header, section, address {
+                width: 1020px;
+                margin-right: auto;
+                margin-left: auto;
+                /* background:pink;; */
+            }
+
+            /* 3. 글자 스타일 */
+            h1, h2, li {
+                font-family:'Noto Sans KR', sans-serif ;
+            }
+            h1 {
+                font-size: 110px; 
+                font-weight: 400;
+                text-align: center;
+            }
+            h2 {
+                font-size : 20px;
+                font-weight: 700;
+
+            }
+            li {
+                font-size: 26px;
+                font-weight: 300;
+                text-align: center;
+            }
+            footer h2 {
+                color: white;
+            }
+            footer li {
+                color: white;
+                text-align: left;
+            }
+
+            /* 4. My Keyword 구역의 스타일 */
+            .keyword-list {
+                border-bottom: 1px solid black;
+                width: 240px;
+                padding-bottom: 20px;
+                display: inline-block;
+            }
+            .keyword-list:nth-child(-n+3) {
+                margin-right: 14px;
+            }
+
+            /* 5. My Color 구역의 스타일 */
+            .gradient-bar {
+                width: 1020px;
+                height: 34px;
+                background: linear-gradient(to right, #f5f588, #9afcc2);
+            }
+
+            /* 6. My Hobby, My Food 구역의 스타일 */
+            .like-list {
+                width: 240px;
+                display: inline-block;
+                
+            }
+            .like-list:nth-child(-n+3) {
+                margin-right: 14px;
+            }
+            .like-list img {
+                width: 240px;
+                margin-bottom: 20px;
+            }
+
+            /* 7. Contact 구역의 스타일 */
+            footer {
+                background-color: black;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .contact-list {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            /* 8. 여백 스타일 지정하기 */
+            header {
+                margin-top: 70px;
+                margin-bottom: 70px;
+            }
+            section {
+                margin-bottom: 70px;
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            /* 9. 미디어 쿼리 적용하기 */
+            @media(max-width: 750px) {
+                geader, section, address {
+                    width: 85%;
+                    /* background: pink; */
+                }
+                h1 {
+                    font-size: 80px;
+                }
+                .keyword-list {
+                    width: 100%;
+                }
+                .keyword-list:nth-child(-n+3) {
+                    margin-bottom: 40px;
+                }
+                .gradient-bar {
+                    width: 100%;
+                    height: 100px;
+                }
+                .like-list {
+                    width: 100%;
+                }
+                .like-list:nth-child(-n+3) {
+                    margin-bottom: 40px;
+                }
+                .contact-list {
+                    display: block;
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Gil Dong</h1>
+        </header>
+        <section>
+            <h2>My Keyword</h2>
+            <ul>
+                <li class="keyword-list">주의깊은</li>
+                <li class="keyword-list">평온한</li>
+                <li class="keyword-list">까다로운</li>
+                <li class="keyword-list">감성적인</li>
+            </ul>
+        </section>
+        <section>
+            <h2>My Color</h2>
+            <div class="gradient-bar"></div>
+        </section>
+        <section>
+            <h2>My Hobby</h2>
+            <ul>
+                <li class="like-list"><img src="exercise.jpg" alt="운동 사진입니다">운동</li>
+                <li class="like-list"><img src="make.jpg" alt="공예 사진입니다">공예</li>
+                <li class="like-list"><img src="travel.jpg" alt="여행 사진입니다">여행</li>
+                <li class="like-list"><img src="drawing.jpg" alt="미술 사진입니다">미술</li>
+            </ul>
+        </section>
+        <section>
+            <h2>My Food</h2>
+            <ul>
+                <li class="like-list"><img src="bibimbap.jpg" alt="비빔밥 사진입니다">비빔밥</li>
+                <li class="like-list"><img src="steak.jpg" alt="스테이크 사진입니다">스테이크</li>
+                <li class="like-list"><img src="sushi.jpg" alt="초밥 사진입니다">초밥</li>
+                <li class="like-list"><img src="bread.jpg" alt="빵 사진입니다">빵</li>
+            </ul>
+        </section>
+        <footer>
+            <address>
+                <h2>Contact</h2>
+                <ul>
+                    <li class="contact-list">ooo-oooo-oooo</li>
+                    <li class="contact-list">aoo@ooo.com</li>
+                </ul>
+            </address>
+        </footer>
+    </body>
+</html>
